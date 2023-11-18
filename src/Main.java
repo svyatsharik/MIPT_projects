@@ -18,7 +18,8 @@ public class Main {
 
   private static void readerText(BufferedReader reader) throws IOException {
     logger.info("Запущен метод readerText");
-    String line = reader.lines().collect(Collectors.joining(System.lineSeparator()));;
+    String line = reader.lines().collect(Collectors.joining(System.lineSeparator()));
+    ;
     logger.info("Полученный из файла текст: " + line);
     writerText(cipherCaesar(line, 5));
   }
@@ -47,7 +48,6 @@ public class Main {
       reader.close();
     }
   }
-
 
   public static void main(String[] args) throws IOException {
     logger.info("Программа запущена");
