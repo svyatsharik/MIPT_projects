@@ -38,8 +38,8 @@ public class Main {
   }
 
   private static void updateText() throws IOException {
-    var reader = new BufferedReader(new FileReader("test.txt"));
     logger.info("Запущен метод updateText");
+    var reader = new BufferedReader(new FileReader("test.txt"));
     try {
       readerText(reader);
     } catch (IOException e) {
